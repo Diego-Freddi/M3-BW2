@@ -1,0 +1,422 @@
+.navbar-brandNB img {
+  height: 50px;
+}
+
+.icon-globeNB {
+  font-size: 1.2rem;
+}
+
+.profile-btnNB {
+  height: 45px;
+  width: 90px;
+  border-radius: 20px;
+}
+
+.profile-btnNB .bi-person-circle {
+  font-size: 1.4rem;
+}
+
+.profile-btnNB {
+  background-color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  height: 45px;
+  width: 90px;
+  border-radius: 20px;
+}
+
+.profile-btnNB:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile del menu a tendina */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  z-index: 1050;
+  width: 200px;
+}
+
+.dropdown-menu.show {
+  display: block;
+  /* Mostra il menu */
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+
+.dropdown-divider {
+  height: 1px;
+  margin: 0.5rem 0;
+  background-color: #e0e0e0;
+}
+
+.subheader-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: calc(100% - 120px);
+  display: inline-block;
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+}
+
+.subheader-content {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+}
+
+.subheader-item {
+  text-align: center;
+  flex: 0 0 8.3333333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.subheader-item.first {
+  border-right: 1px solid #ddd;
+}
+
+.subheader-item i {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.subheader-item div {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.subheader-item.active i,
+.subheader-item.active div {
+  color: #000;
+}
+
+.subheader-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.subheader-container::before,
+.subheader-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.subheader-container::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+  display: none;
+}
+
+.subheader-container::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 5px 10px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.scroll-btn-left {
+  left: 10px;
+  display: none;
+}
+
+.scroll-btn-right {
+  right: 130px;
+}
+
+.filter-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 180px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-container .navigation-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.image-container .navigation-btn.left {
+  left: 10px;
+}
+
+.image-container .navigation-btn.right {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dots span {
+  width: 6px;
+  height: 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.dots .active {
+  background-color: white;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  -webkit-text-stroke: 1px white;
+  z-index: 20;
+}
+
+.heart-icon i {
+  font-weight: bold;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.full-height-map {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.footer h6 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+  color: #000;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+#map {
+  height: 100%;
+  /* Altezza fissa */
+  width: 100%;
+  /* Larghezza massima */
+  border-radius: 8px;
+  /* Angoli arrotondati */
+  border: 1px solid #ddd;
+  /* Bordo sottile */
+}
+
+/* Sezione Consigliati per te */
+.filter-option img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.filter-option img:hover {
+  transform: scale(1.1);
+}
+
+.filter-option p {
+  font-size: 14px;
+}
+
+.filter-option {
+  flex: 1;
+  /* Assegna uno spazio uguale a ciascun elemento */
+  max-width: 150px;
+  /* Impedisce che gli elementi crescano troppo */
+}
+
+.mx-2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Stile per il contenitore Tipo di alloggio */
+.btn-group .btn {
+  border: none;
+  background-color: #f8f9fa;
+}
+
+.btn-group .btn.active {
+  background-color: #f1f1f1;
+  border: 1px solid #000;
+}
+
+/* Stile per il contenitore counter */
+.counter-groupNB {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.counter-itemNB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counterNB {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter-btnNB {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.counter-btnNB:hover {
+  background-color: #ddd;
+}
+
+.counter-valueNB {
+  font-size: 16px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.label {
+  font-size: 16px;
+}
+
+#linkMarta {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=styleNico.css.map */

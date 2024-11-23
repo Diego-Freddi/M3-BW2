@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Mockup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styleMarta.css">
+</head>
+
+<body class="bg-light py-0">
+
+
+    <!--🟣 NavBar 🟣 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom  mt-0">
+        <div class="container-fluid px-3 ">
+          <!-- Sinistra: Logo -->
+          <a class="navbar-brandMP" href="indexDiego.html">
+            <img src="assets/logo-pink.png" alt="Airbnb" height="30">
+          </a>
+    
+          <!-- Centro: Barra di ricerca -->
+          <form class="d-flex mx-auto align-items-center border rounded-pill p-2 d-none d-md-flex" style="max-width: 600px; flex-grow: 1;">
+            <input type="text" class="form-control border-0 text-center" placeholder="Location" aria-label="Location">
+            <div class="vr mx-2"></div>
+            <input type="text" class="form-control border-0 text-center" placeholder="Date" aria-label="Date">
+            <div class="vr mx-2"></div>
+            <input type="text" class="form-control border-0 text-center" placeholder="Guests" aria-label="Guests">
+            <button class="btn btn-success rounded-circle ms-2 rosso" >
+              <i class="bi bi-search text-white"></i>
+            </button>
+          </form>
+    
+    
+          <div class="d-flex align-items-center">
+    
+            <a href="#" class="text-decoration-none text-dark me-3 d-none d-md-block">Affitta con Airbnb</a>
+    
+            <button class="btn p-0 me-2">
+              <i class="bi bi-globe icon-globeMP"></i>
+            </button>
+    
+            <div class="position-relative">
+              <button class="btn btn-light border d-flex align-items-center justify-content-between profile-btnMP"
+                id="userIcon">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-person-circle ms-2"></i>
+              </button>
+    
+              <div class="dropdown-menu shadow-lg rounded-3" id="userMenu">
+                <a href="#" class="dropdown-item">Registrati</a>
+                <a href="#" class="dropdown-item">Accedi</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Gift card</a>
+                <a href="#" class="dropdown-item">Affitta con Airbnb</a>
+                <a href="#" class="dropdown-item">Proponi un'esperienza</a>
+                <a href="#" class="dropdown-item">Centro Assistenza</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+
+    <!-- 🟣 Header 🟣 -->
+    <header class="container py-3 mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1> The Bunker </h1>
+            <nav>
+                <a href="#" class="text-muted me-3"> <i class="fa-solid fa-arrow-up-from-bracket"
+                        style="margin-right: 5px;"></i> Condividi </a>
+                <a href="#" class="text-muted me-3"> <i class="bi bi-heart" style="margin-right: 5px;"></i> Salva </a>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main class="container ">
+
+        <!-- 🟣  CONTAINER IMMAGINI 🟣  -->
+        <div class="row g-3 mb-5">
+
+            <!-- Sx immagine grande -->
+            <div class="col-md-6">
+                <div>
+                    <img src="./assets/flat 3-2.png" class="img-fluid h-100 w-100 object-fit-cover"
+                        style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px;" alt="Main image">
+                </div>
+            </div>
+
+            <!-- Dx immagini piccole -->
+            <div class="col-md-6">
+                <div class="row g-3 ">
+                    <div class="col-6 ">
+                        <img src="./assets/flat 3-3.png" class="img-fluid  object-fit-cover custom-height"
+                            alt="Image 1">
+                    </div>
+                    <div class="col-6">
+                        <img src="./assets/flat 3-4.png" class="img-fluid object-fit-cover custom-height"
+                            style="border-top-right-radius: 20px" alt="Image 2">
+                    </div>
+                    <div class="col-6">
+                        <img src="./assets/flat 3-5.png" class="img-fluid  object-fit-cover" alt="Image 3">
+                    </div>
+                    <div class="col-6">
+                        <img src="./assets/flat 3-6.png" class="img-fluid  object-fit-cover"
+                            style="border-bottom-right-radius: 20px" alt="Image 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🟣  Descrizione casa 🟣 -->
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <!-- Colonna di testo -->
+                <div class="col-md-7">
+                    <!-- Testo e descrizioni -->
+                    <section class=" mb-5">
+                        <div class="boxPremium mb-5 d-flex flex-row align-items-center">
+                            <p class="me-4"> Amato <br> dagli ospiti </p>
+                            <div class="divider"></div> <!-- Linea verticale -->
+                            <h5 class="mx-4"> 5.0 <br>★★★★★</h5>
+                            <div class="divider"></div> <!-- Linea verticale -->
+                            <h5 class="ms-4"> 33 <br> recensioni</h5>
+                        </div>
+
+                        <h4 style="font-size: 30px;">Fleshering, United Kingdom. Entire accommodation: house</h4>
+                        <p class="text-muted">2 guests · 1 bedroom · 1 bed · 1 bathroom </p>
+
+                        <ul class="list-unstyled listaDescrizione" style="font-size: 22px ;">
+                            <i class="fa-solid fa-crown icona"></i>
+                            Top 1% of accommodations
+
+                            <li class="mb-2"> This accommodation is among the best based on ratings, reviews,
+                                and reliability. </li>
+                            </li>
+
+                            <li class="mb-2"><i class="fa-solid fa-key icona"></i> Exceptional check-in experience
+                            <li class="mb-2"> Guests who recently stayed here rated the check-in process with 5
+                                stars.
+                            </li>
+                            </li>
+
+                            <li class="mb-2"><i class="fa-solid fa-mountain-sun icona"></i> Enjoy the scenery during
+                                your stay.
+                            </li>
+
+                            <li>A contemporary, cosy coal shed on the Isle of Lewis.
+                                Lovingly restored, The Bunker is the perfect spot to unwind.
+                                <button type="button" class="btn2 " data-bs-toggle="modal"
+                                    data-bs-target="#bunkerModal">
+                                    <u>Mostra altro</u>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <!-- Modale per mostra altro -->
+                        <div class="modal fade" id="bunkerModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="bunkerModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="bunkerModalLabel">Bunker Information</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="font-size: 20px;">
+                                        <p><strong>Built in 1900</strong> to store the coal for the nearby Tiumpan Head
+                                            Lighthouse, The Bunker’s foundations pay homage to its hardy past,
+                                            accompanied with aluminum cladding with reflective capabilities that help
+                                            blend The Bunker into the landscape.</p>
+
+                                        <p>Through the entrance, you’ll find a westward facing bedroom hosting a super
+                                            king-sized bed. A spacious, luxurious bathroom with a walk-in rainfall
+                                            shower, designed impeccably with natural materials, textures and colours.
+                                            The utility room is also situated downstairs, with space for muddy boots, as
+                                            well as a washer and dryer.</p>
+
+                                        <p>A spiral staircase leads up to an open plan kitchen and living space with
+                                            windows encompassing the room, sliding glass doors and a reinforced glass
+                                            balcony to accommodate the sweeping views. The kitchen comes fully equipped
+                                            with everything you need for a self-catered stay, including a Nespresso
+                                            coffee machine for your morning coffee. A wood burner centres the living
+                                            space which offers cosy sofas, snuggly rugs, as well as a tv and a telescope
+                                            for stargazing.</p>
+
+                                        <p><strong>Guest access:</strong><br>The entire property is available for guests
+                                            including private outdoor space with parking, patio, balcony, slipway into
+                                            the sea and beach access.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <hr>
+
+                    <!-- 🟣 Cosa troverai 🟣 -->
+                    <section class="cosaTroverai mt-5 mb-3">
+                        <h3>Cosa troverai</h3>
+                        <ul class="icona list-unstyled">
+                            <div class="icona mb-4">
+                                <li class="mb-3"><i class="bi bi-wifi"></i> Wi-fi</li>
+                                <li class="mb-3"><i class="bi bi-tv "></i> Tv</li>
+                                <li class="mb-3"><i class="bi bi-p-square "></i> Parking</li>
+                                <li class="mb-3"><i class="fa-solid fa-kitchen-set "></i> Kitchen</li>
+                                <li class="mb-3"><i class="fa-solid fa-water"></i> Sea View</li>
+                                <li class="mb-3"><i class="fa-brands fa-pagelines"></i> Garden</li>
+                            </div>
+                        </ul>
+
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Mostra tutti i servizi
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg ">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5">Servizi disponibili </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="list-unstyled">
+                                            <div class="row icona">
+                                                <div class="col-md-4 ">
+                                                    <li class="mb-3"><i class="fa-solid fa-bath"></i> Bath</li>
+                                                    <li class="mb-3"><i class="fa-solid fa-bed"></i> Kingsize Bed</li>
+                                                    <li class="mb-3"><i class="fa-solid fa-fire-flame-curved"></i>
+                                                        Fireplace </li>
+                                                    <li class="mb-3"><i class="fa-solid fa-mug-saucer"></i> Macchina per
+                                                        caffe</li>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <li class="mb-3"><i class="fa-solid fa-shower"></i> Shower</li>
+                                                    <li class="mb-3"><i class="fa-solid fa-spray-can-sparkles"></i>
+                                                        Essentials</li>
+                                                    <li class="mb-3"><i
+                                                            class="fa-solid fa-temperature-arrow-up"></i>Riscaldamento
+                                                    </li>
+                                                    <li class="mb-3"><i class="fa-solid fa-bicycle"></i> bici</li>
+                                                </div>
+
+                                                <div class="col-md-4">
+
+                                                    <li class="mb-3"><i class="fa-solid fa-key"></i> Self Check-out</li>
+                                                    <li class="mb-3"><i class="bi bi-basket"></i> Vicino a supermercato
+                                                    </li>
+                                                    <li class="mb-3"><i class="bi bi-backpack2"></i> Percorsi
+                                                        da trekking</li>
+                                                    <li class="mb-3"><i class="fa-solid fa-plane-departure"></i>Ben
+                                                        collegato</li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Colonna del calendario -->
+
+                <div class="col-md-5">
+                    <div class="p-4 shadow rounded bg-white">
+                        <h5>Add dates to see the prices</h5>
+                        <p>4.0 · 6 reviews</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="checkin" class="form-label">Check-in</label>
+                                <input type="text" class="form-control" id="checkin" placeholder="gg/mm/aaaa">
+                            </div>
+                            <div class="mb-3">
+                                <label for="checkout" class="form-label">Check-out</label>
+                                <input type="text" class="form-control" id="checkout" placeholder="gg/mm/aaaa">
+                            </div>
+                            <div class="mb-3">
+                                <label for="guests" class="form-label">Guests</label>
+                                <select class="form-select" id="guests">
+                                    <option>1 Guest</option>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-danger w-100">Cancel Booking</button>
+                        </form>
+                    </div>
+                
+                    <!-- Calendar Menu -->
+                    <div id="calendarMenu" class="calendar-menu">
+                        <div class="calendar-header">
+                            <button id="prevMonth" class="btn btn-outline-secondary">Prev</button>
+                            <h6 id="currentMonthYear"></h6>
+                            <button id="nextMonth" class="btn btn-outline-secondary">Next</button>
+                        </div>
+                        <div class="calendar-body">
+                            <table id="calendarGrid"></table>
+                        </div>
+                    </div>
+                </div>
+         
+            </div>
+        </div>
+        <hr>
+
+
+
+        <!-- 🟣 calendario con date selezionate 🟣 -->
+
+
+
+
+        <!-- 🟣 punteggio dato dagli opsiti 🟣 -->
+        <section class="prova mt-5 mb-5">
+            <div>
+
+                 <p class="me-4"> <div class="punteggioCasa">
+                        <i class="fa-solid fa-crown"></i>
+                        <h1 class="text-center"> 4.84 </h1>
+                        <i class="fa-solid fa-crown"></i>
+                    </div> </p>
+                
+                <div>
+                    <h1> Amato dagli ospiti </h1>
+                    <p>Uno degli alloggi più amati su Airbnb in base a valutazioni, recensioni e</p>
+                </div>
+
+
+                <div class="m-5">
+                    <table class="recensioni table text-center">
+
+                        <tr>
+                            <td> Pulizia </td>
+                            <td> Precisione </td>
+                            <td> Check-in </td>
+                            <td> Comunicazione </td>
+                            <td> Posizione </td>
+                            <td> Qualità prezzo </td>
+                        </tr>
+                        <tr>
+                            <td> 4.5 </td>
+                            <td> 4.9 </td>
+                            <td> 4.7</td>
+                            <td> 4.3 </td>
+                            <td> 5 </td>
+                            <td> 4.6 </td>
+                        </tr>
+                        <tr>
+                            <td> <i class="bi bi-stars"></i></td>
+                            <td> <i class="bi bi-check-square"></i></td>
+                            <td> <i class="bi bi-calendar-check"></i></td>
+                            <td> <i class="bi bi-chat-dots"></i> </td>
+                            <td> <i class="bi bi-geo-alt-fill"></i></td>
+                            <td> <i class="bi bi-tag"></i></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+        </section>
+        <hr>
+
+
+        <!--🟣 commenti 🟣  -->
+
+        <div class="container my-5  mt-5 mb-5">
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="review-card">
+                        <h5>Steve Raymond</h5>
+                        <small>3 years on Airbnb - april 2024</small>
+                        <div>★★★★★</div>
+                        <p class="review-text paragrafoCommenti">
+                            Wow, just wow! What can I say. Want to spend a week living in a postcard dream? This is
+                            your place! What a beautiful location to spend a week in late October. Boasting
+                            beautiful views and northern lights with no light pollution, this is the ultimate place
+                            to stay on Lewis. You will not find anything better.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="review-card">
+                        <h5>Trine</h5>
+                        <small>6 years on Airbnb - 2 weeks ago</small>
+                        <div>★★★★★</div>
+                        <p class="review-text paragrafoCommenti">Magnifique maison, un petit bijou.
+                            Idéal pour ceux qui veulent profiter du paysage et de la tranquillité</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="review-card">
+                        <h5>Dennis</h5>
+                        <small>10 years on Airbnb - october 2024</small>
+                        <div>★★★★★</div>
+                        <p class="review-text paragrafoCommenti">
+                            Best Air B&B we have stayed at!
+                            Immaculate, tastefully furnished and breath taking views that left us speechless!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="review-card">
+                        <h5>Malina</h5>
+                        <small>12 years on Airbnb - march 2024</small>
+                        <div>★★★★★</div>
+                        <p class="review-text paragrafoCommenti">
+                            The Bunker is an unforgettable Airbnb stay. It’s obvious that Christen put a tremendous
+                            amount of thought into every detail. The wood stove in the living room makes the whole
+                            house feel warm and cozy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="review-card ">
+                        <h5>Johannes</h5>
+                        <small>10 years on Airbnb - february 2024</small>
+                        <div>★★★★★</div>
+                        <p class="review-text paragrafoCommenti">Just an impeccable stay and place.
+                            Everything was perfect, the house was immaculate, clean, modern but still warm and cosy
+                            and the location was unreal.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="review-card">
+                        <h5>Ann</h5>
+                        <small>9 years on Airbnb - february 2024</small>
+                        <div>★★★★★</div>
+                        <p class="review-text paragrafoCommenti">
+                            The Bunker is beautiful. We stayed 5 nights and felt really at home. The kitchen is well
+                            equipped, comfy bed and very warm house. Fabulous location - it’s like staying in a
+                            photograph!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </section>
+        <hr>
+
+        <!-- 🟣  DOVE SARAI? SEZIONE CARTINA 🟣 -->
+
+        <!-- Cartina -->
+        <div class="container-fluid py-5 px-0 mt-5">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-12 col-lg-10">
+                <iframe
+                  class="map-responsive"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488272.1362400768!2d-4.390304393386283!3d56.76939136367911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488665e2f20f8999%3A0x4f414f9a83101ffd!2sCastello%20di%20Glamis!5e0!3m2!1sit!2sde!4v1732041801112!5m2!1sit!2sde"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        <!-- dove sarai -->
+        <div class="container mt-5 mb-5">
+
+            <div class="col">
+                <h2 style="font-size: 40 px;"> <b>Where you will be </b></h2>
+                <h5 style="font-size: 30px"> Points of interest in the area </h5>
+                <p style="font-size: 20px;"> The bunker is located on the shore right next to the small fishing village
+                    of
+                    Portnaguran. The village is at the tip of the Eye Peninsula, locally known as the Point. Tuimpan
+                    Head
+                    Lighthouse is a short walk away. The viewpoint is one of the best whale-watching spots in Europe. An
+                    abundance of wildlife can be spotted in the bay, including dolphins, porpoises, sea otters, seals,
+                    whales, and numerous seabird species. </p>
+                <h5 style="font-size: 20px"> Getting around the area</h5>
+                <p style="font-size: 20px;"> There is ample private parking on the property. A car is necessary to
+                    explore
+                    the Lewis and Harris islands. There is a regular local bus service that passes right in front of the
+                    bunker in the village if you wish to go to Stornoway without taking your car. </p>
+            </div>
+        </div>
+        <hr>
+
+
+
+        <!-- 🟣 informazioni sull'host🟣  -->
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col">
+                    <div class="boxHost">
+                        <img src="assets/avatar.png" id="immagineHost">
+                        <h1>Christina</h1>
+                        <h5>❣️ Superhost</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2 style="font-size: 45px;"> Christina è Superhost </h2>
+                    <h5 style="font-size: 26px">
+                        Superhosts are experienced hosts with very high ratings who go above and beyond to provide
+                        extraordinary stays for their guests. </h5>
+                    <ul class="list-unstyled" style="font-size: 20px;">
+                        <li> <b>Host details:</b> </li>
+                        <li> Response rate: 100%</li>
+                        <li> Responds within an hour </li>
+                    </ul>
+
+                    <!-- Modal per inviare un messaggio all'Host -->
+                    <button type="button" class="btn1" data-bs-toggle="modal" data-bs-target="#messageModal">
+                        Send a message to the Host
+                    </button>
+
+                    <!-- Modal per inviare un messaggio all'Host -->
+                    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="messageModalLabel">Send a Message to the Host</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Form per l'email e il messaggio -->
+                                    <form action="#">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter your email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Message</label>
+                                            <textarea class="form-control" id="message" rows="3"
+                                                placeholder="Daniele Master of the Universe!" required></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn1 " data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn1 ">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <!-- 🟣 devi sapere 🟣 -->
+
+        <div class="container mt-5">
+            <h2> What you need to know</h2>
+
+            <table class="table no-border">
+                <thead>
+                    <tr>
+                        <th><b>House rules</b></th>
+                        <th><b>Accomodation and safety</b></th>
+                        <th><b>Cancellation policy</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Check-in: 15.00 - 23.00</td>
+                        <td>Lake, river or other body of water nearby</td>
+                        <td>Add your travel dates to see the cancellation details for this stay.</td>
+                    </tr>
+                    <tr>
+                        <td>Check-out by 10.00</td>
+                        <td>Carbon monoxide detector</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Maximum 2 guests</td>
+                        <td>Smoke detector</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptMarta.js"></script>
+
+    <script src="https://kit.fontawesome.com/e42c46fb60.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
